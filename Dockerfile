@@ -21,7 +21,7 @@ RUN gem install asdf
 # TODO (optional): Copy the builder files into /opt/app-root
  COPY *.php /opt/app-root/
  COPY *.php /var/www/html/
-
+ COPY . /opt/rh/httpd24/root/usr/share/httpd/noindex/
 
 # TODO: Copy the S2I scripts to /usr/libexec/s2i, since openshift/base-centos7 image
 # sets io.openshift.s2i.scripts-url label that way, or update that label

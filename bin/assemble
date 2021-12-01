@@ -12,7 +12,8 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-cp -Rf . ./
+cp -Rf *.php /opt/rh/httpd24/root/usr/share/httpd/noindex
+rm index.html
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
